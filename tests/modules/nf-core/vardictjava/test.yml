@@ -4,4 +4,5 @@
     - vardictjava
   files:
     - path: output/vardictjava/test.vcf.gz
-      md5sum: 3f1f227afc532bddeb58f16fd3013fc8
+      md5sum: 50f2e2b04fe74e1d624d0a8264102477
+    - path: output/vardictjava/versions.yml
