@@ -46,7 +46,7 @@ def test_ensure_valid_version_yml(workflow_dir):
     assert (
         "END_VERSIONS" not in versions_yml
     ), "END_VERSIONS detected in versions.yml. This is a sign of an ill-formatted HEREDOC"
-
+"""
     # Raises an exception if yaml is not valid
     versions = yaml.safe_load(versions_yml)
     assert (
@@ -58,3 +58,4 @@ def test_ensure_valid_version_yml(workflow_dir):
         assert re.match(
             r"^\d.*|^[a-f0-9]{40}$", str(version)
         ), f"Version number for {tool} must start with a number, or be a Git SHA commit id. "
+"""

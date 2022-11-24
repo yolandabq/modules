@@ -1,7 +1,8 @@
 - name: varscan test_varscan
   command: nextflow run ./tests/modules/nf-core/varscan -entry test_varscan -c ./tests/config/nextflow.config -c ./tests/modules/nf-core/varscan/nextflow.config
   tags:
-  - varscan
+    - varscan
   files:
-  - path: output/varscan/test_varscan.vcf.gz
-    md5sum: 098d3b3f0222e00ee920df60a362e846
+    - path: output/varscan/test_varscan.vcf.gz
+      md5sum: b91887cc38abfbbce6b6f4893dca5c21
+    - path: output/varscan/versions.yml

@@ -1,0 +1,3 @@
+varscan:
+  - modules/nf-core/varscan/**
+  - tests/modules/nf-core/varscan/**

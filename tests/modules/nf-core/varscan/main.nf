@@ -8,7 +8,7 @@ workflow test_varscan {
 
     input = [
         [ id:'test', single_end:false ], // meta map
-        file(params.test_data['homo_sapiens']['illumina']['test_mpileup'], checkIfExists: true)
+        file("./testdata/Sample1_T1.mpileup", checkIfExists: true)
     ]
 
     VARSCAN ( input )
